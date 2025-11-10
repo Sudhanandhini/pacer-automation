@@ -22,9 +22,9 @@ const Footer = () => {
                 <button className="px-8 py-3 bg-blue-900 hover:bg-blue-800 text-white rounded-full font-semibold transition-colors">
                   GET STARTED
                 </button>
-                <button className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-teal-500 text-white rounded-full font-semibold transition-colors">
+                {/* <button className="px-8 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-teal-500 text-white rounded-full font-semibold transition-colors">
                   REQUEST DEMO
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -54,17 +54,18 @@ const Footer = () => {
                     solutions@pacerautomation.com 
                     
                   </a><br />
-                   <a href="mailto:supportcenter@pacerautomation.com" className="text-gray-400 text-sm hover:text-teal-500 transition-colors">
+                   {/* <a href="mailto:supportcenter@pacerautomation.com" className="text-gray-400 text-sm hover:text-teal-500 transition-colors">
                     
                     supportcenter@pacerautomation.com 
-                  </a>
+                  </a> */}
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <MdPhone className="text-teal-500 text-xl mt-1" />
                 <div>
-                  <p className="text-gray-400 text-sm">+91 80 4282 3000</p>
+                  <p className="text-gray-400 text-sm">+91 97428 23131</p>
+                  <p className="text-gray-400 text-sm">080 4973 4119</p>
                  
                 </div>
               </div>
@@ -91,7 +92,7 @@ Ulsoor, <br/>Bangalore-560 042, INDIA
                 </Link>
                 
               </div>
-              
+{/*               
               <div>
                 <Link to="/about" className="text-sm hover:text-teal-500 transition-colors">
                   About Us
@@ -116,7 +117,7 @@ Ulsoor, <br/>Bangalore-560 042, INDIA
                   Career
                 </Link>
                 
-              </div>
+              </div> */}
               
               <div>
                 <Link to="/contact" className="text-sm hover:text-teal-500 transition-colors">

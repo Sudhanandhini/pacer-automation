@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo10 from "../assets/10.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,7 +50,7 @@ const Header = () => {
           <Link to="/" className={`text-2xl font-bold transition-colors ${
             isScrolled ? 'text-secondary' : 'text-black'
           }`}>
-            PACER
+            <img src={logo10} alt='logo' width="70%" />
           </Link>
 
           {/* Desktop Menu */}
@@ -59,14 +60,14 @@ const Header = () => {
             }`}>
               Home
             </Link>
-            <Link to="/about" className={`transition-colors ${
+            {/* <Link to="/about" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               About Us
-            </Link>
+            </Link> */}
             
             {/* Our Offering Dropdown */}
-            <div 
+            {/* <div 
               className="relative"
               onMouseEnter={() => setShowSubmenu(true)}
               onMouseLeave={() => setShowSubmenu(false)}
@@ -98,9 +99,9 @@ const Header = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </div> */}
 
-            <Link to="/alliance" className={`transition-colors ${
+            {/* <Link to="/alliance" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               Alliance
@@ -109,7 +110,7 @@ const Header = () => {
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               Career
-            </Link>
+            </Link> */}
             <Link to="/contact" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>

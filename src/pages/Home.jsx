@@ -2,13 +2,17 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowRight, FiUsers, FiZap, FiShield, FiHeadphones } from 'react-icons/fi';
 import { MdDevices } from 'react-icons/md';
-import home1 from "../assets/home.png"
-import home2 from "../assets/SaaS-2.png"
-import home3 from "../assets/SaaS-3.png"
-import home4 from "../assets/SaaS-4.png"
-import home5 from "../assets/SaaS-5.png"
-import circle1 from "../assets/circle1.png"
+import home1 from "../assets/home.png";
+import home2 from "../assets/infrastructure.jpg";
+import home3 from "../assets/usercomputing.jpg";
+import home4 from "../assets/consulting-service.jpg";
+import home51 from "../assets/network-security.jpg";
+import home6 from "../assets/implementation.jpg";
+import home7 from "../assets/cloud-solutions.jpg";
+import circle1 from "../assets/circle1.png";
 import AboutCompanySection from './AboutCompanySection';
+import LogoSlider from './LogoSlider';
+
 
 
 const Home = () => {
@@ -186,7 +190,7 @@ const Home = () => {
 
               <div className="md:order-2 relative z-10">
                 <img
-                  src={home5}
+                  src={home51}
                   alt="Collaboration"
                   className="w-full"
                 />
@@ -321,7 +325,7 @@ const Home = () => {
 
               <div className="relative z-10">
                 <img
-                  src={home3}
+                  src={home7}
                   alt="All Devices"
                   className="w-full"
                 />
@@ -366,7 +370,7 @@ const Home = () => {
 
               <div className="md:order-2 relative z-10">
                 <img
-                  src={home4}
+                  src={home6}
                   alt="Support"
                   className="w-full"
                 />
@@ -469,6 +473,8 @@ const Home = () => {
           </motion.div>
         </div>
       </section> */}
+
+      <LogoSlider />
     </div>
   );
 };

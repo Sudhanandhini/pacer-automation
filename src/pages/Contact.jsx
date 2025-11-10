@@ -103,7 +103,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-secondary text-lg mb-1">Phone</h3>
-                  <p className="text-gray-600 hover:text-teal-500 transition-colors">+91 80 4282 3000</p>
+                  <p className="text-gray-600 hover:text-teal-500 transition-colors">+91 97428 23131</p>
+                   <p className="text-gray-600 hover:text-teal-500 transition-colors">080 4973 4119</p>
                   {/* <p className="text-gray-600 text-sm hover:text-teal-500 transition-colors">Monday - Friday, 9:00 AM to 6:00 PM IST</p> */}
                 </div>
               </div>
@@ -120,11 +121,11 @@ const Contact = () => {
                       solutions@pacerautomation.com
                     </a>
                   </p>
-                  <p className="text-gray-600">
+                  {/* <p className="text-gray-600">
                     <a href="mailto:supportcenter@pacerautomation.com" className="hover:text-primary transition-colors hover:text-teal-500 transition-colors">
                       supportcenter@pacerautomation.com
                     </a>
-                  </p>
+                  </p> */}
                 </div>
               </div>
 
