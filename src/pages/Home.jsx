@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { FiArrowRight, FiUsers, FiZap, FiShield, FiHeadphones } from 'react-icons/fi';
 import { MdDevices } from 'react-icons/md';
 import home1 from "../assets/home.png"
-import home2 from "../assets/SaaS-2.png"  
+import home2 from "../assets/SaaS-2.png"
 import home3 from "../assets/SaaS-3.png"
 import home4 from "../assets/SaaS-4.png"
 import home5 from "../assets/SaaS-5.png"
 import circle1 from "../assets/circle1.png"
+import AboutCompanySection from './AboutCompanySection';
+
 
 const Home = () => {
   const fadeInUp = {
@@ -56,22 +58,22 @@ const Home = () => {
               animate="animate"
               variants={staggerContainer}
             >
-              <motion.h1 
+              <motion.h1
                 variants={fadeInUp}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+                className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight"
                 style={{ color: '#1E3A8A' }}
-              >
-                IT Infrastructure Solutions Reimagined
+              >Pacer Automation
+                
               </motion.h1>
-              
-              <motion.p 
+
+              <motion.p
                 variants={fadeInUp}
                 className="text-lg text-gray-600 mb-8 leading-relaxed"
-              >
-                We provide all the best features you can use focusing on your IT infrastructure management and get back to your life's work.
+              >In today's competitive business environment, organizations, irrespective of their size, are dependent on IT to run their core  business efficiently.
+                With a wide range of vendors and  ever-changing technologies, businesses are often faced with  many choices while deploying...
               </motion.p>
-              
-              <motion.div 
+
+              <motion.div
                 variants={fadeInUp}
                 className="flex flex-wrap gap-4"
               >
@@ -91,9 +93,9 @@ const Home = () => {
               className="relative"
             >
               <div className="relative z-10">
-                <img 
-                  src={home1} 
-                  alt="Team Collaboration" 
+                <img
+                  src={home1}
+                  alt="Team Collaboration"
                   className="w-full"
                 />
               </div>
@@ -101,6 +103,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <AboutCompanySection />
 
       {/* Powerful Section */}
       <section className="py-20 bg-white relative">
@@ -112,9 +116,9 @@ const Home = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="section-title">Powerful, yet simple</h2>
+            <h2 className="section-title">OUR OFFERING</h2>
             <p className="section-subtitle">
-              Everything we build is intentionally designed to include the features you need, right where you need them - without being overly complicated.
+              We provide Technical expertise and practical advice required to deliver optimal performance, reliability, security, and access to the IT infrastructure.
             </p>
           </motion.div>
 
@@ -129,28 +133,41 @@ const Home = () => {
             >
               {/* Circle Background - Right Side */}
               <div className="absolute -translate-y-1/2 w-96 h-96 opacity-70 pointer-events-none hidden lg:block"
-               style={{ right: "-24%", transform: "rotate(270deg)" }}>
+                style={{ right: "-24%", transform: "rotate(270deg)" }}>
                 <img src={circle1} alt="" className="w-full h-full object-contain" />
               </div>
 
               <div className="relative z-10">
-                <img 
+                <img
                   src={home2}
-                  alt="Quick Setup" 
+                  alt="Quick Setup"
                   className="w-full"
                 />
               </div>
+
               <div className="relative z-10">
                 <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
-                  READY TO USE
+                  SMART IT SOLUTIONS
                 </span>
                 <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
-                  Get setup quickly
+                  Infrastructure Management Services
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Our streamlined process will have you up and running in hours - not weeks. We handle the complexity so you can focus on your business.
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Ensure the seamless operation, security, and scalability of an organization's IT environment. IMS covers the proactive management of servers, networks, storage, data centers, and cloud systems to minimize downtime and enhance performance.
                 </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
+
+
             </motion.div>
 
             {/* Feature 2 - Collaboration */}
@@ -163,27 +180,38 @@ const Home = () => {
             >
               {/* Circle Background - Left Side */}
               <div className="absolute -translate-y-1/2 w-96 h-96 opacity-70 pointer-events-none hidden lg:block"
-               style={{ left: "-23%", transform: "rotate(90deg)" }}>
+                style={{ left: "-23%", transform: "rotate(90deg)" }}>
                 <img src={circle1} alt="" className="w-full h-full object-contain" />
               </div>
 
               <div className="md:order-2 relative z-10">
-                <img 
+                <img
                   src={home5}
-                  alt="Collaboration" 
+                  alt="Collaboration"
                   className="w-full"
                 />
               </div>
-              <div className="md:order-1 relative z-10">
+              {/* Networking and Security Solutions */}
+              <div className="relative z-10 mb-10">
                 <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
-                  WORK TOGETHER
+                  SECURE NETWORKS
                 </span>
                 <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
-                  Built for collaboration
+                  Networking and Security Solutions
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  A platform that your team will love. Fast, cloud-native platforms consolidate with your team. Seamlessly collaborate.
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Design, deploy and monitor resilient networks with layered security. We protect data and users through firewalls, VPNs, IDS/IPS and continual threat monitoring to keep your business safe and online.
                 </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </motion.div>
 
@@ -202,22 +230,33 @@ const Home = () => {
               </div>
 
               <div className="relative z-10">
-                <img 
-                  src={home3} 
-                  alt="All Devices" 
+                <img
+                  src={home3}
+                  alt="All Devices"
                   className="w-full"
                 />
               </div>
-              <div className="relative z-10">
+              {/* User Computing */}
+              <div className="relative z-10 mb-10">
                 <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
-                  USE ANYWHERE
+                  END-USER EXPERIENCE
                 </span>
                 <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
-                  Accessible on all your devices
+                  User Computing
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Work on your desktop, tablets, phones, we sync and share on all of them. Anywhere, anytime on all platforms.
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Deliver modern, secure and productive endpoints—laptops, desktops and mobile—managed centrally with patching, ITSM integration and user support to maximize workforce productivity.
                 </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </motion.div>
 
@@ -231,35 +270,137 @@ const Home = () => {
             >
               {/* Circle Background - Left Side */}
               <div className="absolute -translate-y-1/2 w-96 h-96 opacity-70 pointer-events-none hidden lg:block"
-              style={{ left: "-23%", transform: "rotate(90deg)" }}>
+                style={{ left: "-23%", transform: "rotate(90deg)" }}>
                 <img src={circle1} alt="" className="w-full h-full object-contain" />
               </div>
 
               <div className="md:order-2 relative z-10">
-                <img 
-                  src={home4} 
-                  alt="Support" 
+                <img
+                  src={home4}
+                  alt="Support"
                   className="w-full"
                 />
               </div>
-              <div className="md:order-1 relative z-10">
+              {/* Consulting Services */}
+              <div className="relative z-10 mb-10">
                 <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
-                  PREMIUM SUPPORT
+                  STRATEGIC ADVISORY
                 </span>
                 <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
-                  Backed by an amazing support team
+                  Consulting Services
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  If you have a question or an issue, we're here every step of the way when you need us.
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Expert IT consulting to align technology with business goals—assessments, roadmaps and cost-optimization plans that reduce risk and accelerate digital transformation.
                 </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </motion.div>
+
+
+             <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 gap-12 items-center relative"
+            >
+              {/* Circle Background - Right Side */}
+              <div className="absolute -translate-y-1/2 w-96 h-96 opacity-70 pointer-events-none hidden lg:block"
+                style={{ right: "-24%", transform: "rotate(270deg)" }}>
+                <img src={circle1} alt="" className="w-full h-full object-contain" />
+              </div>
+
+              <div className="relative z-10">
+                <img
+                  src={home3}
+                  alt="All Devices"
+                  className="w-full"
+                />
+              </div>
+               <div className="relative z-10 mb-10">
+                <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
+                  CLOUD-FIRST
+                </span>
+                <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
+                  Cloud Solutions
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  Migrate, modernize and manage cloud workloads across public, private and hybrid environments for scalability, cost control and improved agility.
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </motion.div>
+
+           
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="grid md:grid-cols-2 gap-12 items-center relative"
+            >
+              {/* Circle Background - Left Side */}
+              <div className="absolute -translate-y-1/2 w-96 h-96 opacity-70 pointer-events-none hidden lg:block"
+                style={{ left: "-23%", transform: "rotate(90deg)" }}>
+                <img src={circle1} alt="" className="w-full h-full object-contain" />
+              </div>
+
+              <div className="md:order-2 relative z-10">
+                <img
+                  src={home4}
+                  alt="Support"
+                  className="w-full"
+                />
+              </div>
+              {/* Implementation And Migration Services */}
+              <div className="relative z-10 mb-10">
+                <span className="font-semibold text-sm uppercase tracking-wide" style={{ color: '#00BFA5' }}>
+                  FAST & SECURE
+                </span>
+                <h3 className="text-3xl font-bold mt-2 mb-4" style={{ color: '#1E3A8A' }}>
+                  Implementation And Migration Services
+                </h3>
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  End-to-end implementation and migration services with minimal disruption—planning, testing and cutover support to ensure smooth transitions and measurable outcomes.
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 font-semibold py-3 px-8 rounded-md transition-all hover:shadow-lg"
+                  style={{ backgroundColor: '#00BFA5', color: 'white' }}
+                >
+                  View More
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
 
+
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -297,7 +438,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       {/* <section className="py-16" style={{ backgroundColor: '#00BFA5' }}>

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiPhone, FiMail, FiMapPin } from 'react-icons/fi';
 import bgimage from '../assets/circles-overlay-3.png';
-import contact from "../assets/contact-removebg-preview.png";
+import contact from "../assets/contact.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
