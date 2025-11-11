@@ -8,11 +8,7 @@ const Offerings = () => {
       title: 'Immense Infrastructure Management Services',
       description: 'Comprehensive infrastructure management solutions to keep your IT systems running smoothly and efficiently.'
     },
-    {
-      icon: <FiServer className="text-4xl" />,
-      title: 'DataCenter Solutions',
-      description: 'State-of-the-art datacenter solutions designed for scalability, reliability, and performance.'
-    },
+    
     {
       icon: <FiCloud className="text-4xl" />,
       title: 'Cloud Solutions',
@@ -51,7 +47,7 @@ const Offerings = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-[#1E3A8A] mb-6">
               Our Offerings
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -74,10 +70,10 @@ const Offerings = () => {
                 viewport={{ once: true }}
                 className="bg-white p-8 rounded-lg shadow-md hover:shadow-xl transition-all group"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all">
+                <div className="w-16 h-16 bg-[#00BFA5]/10 rounded-lg flex items-center justify-center mb-6 text-[#00BFA5] group-hover:bg-[#00BFA5] group-hover:text-white transition-all">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-secondary mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold text-[#1E3A8A] mb-3">{service.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{service.description}</p>
               </motion.div>
             ))}
@@ -86,7 +82,7 @@ const Offerings = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-16">
+      {/* <section className="bg-[#00BFA5] py-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -101,12 +97,12 @@ const Offerings = () => {
             <p className="text-white/90 text-lg mb-8">
               Let's discuss how our solutions can help your business grow.
             </p>
-            <button className="bg-white text-primary hover:bg-gray-100 font-semibold py-3 px-8 rounded-md transition-all">
+            <button className="bg-white text-[#00BFA5] hover:bg-gray-100 font-semibold py-3 px-8 rounded-md transition-all">
               Get Started Today
             </button>
           </motion.div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
