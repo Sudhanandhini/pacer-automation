@@ -314,7 +314,7 @@ const About = () => {
         </div>
       </section>
 
-      <OurOffering />
+      {/* <OurOffering /> */}
 
       {/* Trusted By Section */}
       {/* <section className="py-12 bg-gray-50">
