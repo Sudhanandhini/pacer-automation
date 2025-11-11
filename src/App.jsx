@@ -7,6 +7,14 @@ import Contact from './pages/Contact';
 import Offerings from './pages/Offerings';
 import Alliance from './pages/Alliance';
 import Career from './pages/Career';
+import NetworkSecuritySolutions from './pages/NetworkSecuritySolutions';
+import UserComputing from './pages/UserComputing';
+import ImplementationMigration from './pages/ImplementationMigration';
+import InfrastructureManagement from './pages/InfrastructureManagement';
+import ConsultingServices from './pages/ConsultingServices';
+import CloudSolutions from './pages/CloudSolutions';
+
+
 
 function App() {
   return (
@@ -21,6 +29,12 @@ function App() {
             <Route path="/offerings" element={<Offerings />} />
             <Route path="/alliance" element={<Alliance />} />
             <Route path="/career" element={<Career />} />
+            <Route path="/network-security" element={<NetworkSecuritySolutions />} />
+            <Route path="/user-computing" element={<UserComputing />} />
+            <Route path="/consulting-services" element={<ConsultingServices />} />
+            <Route path="/implementation-migration" element={<ImplementationMigration />} />
+            <Route path="/infrastructure-management" element={<InfrastructureManagement />} />
+            <Route path="/cloud-solutions" element={<CloudSolutions />} />
           </Routes>
         </main>
         <Footer />

@@ -10,13 +10,12 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const offerings = [
-    'Immense Infrastructure Management Services',
-    'DataCenter Solutions',
-    'Cloud Solutions',
-    'Network and Security Solutions',
-    'User Computing',
-    'Implementations and Migration Services',
-    'Consulting Services'
+    { label: 'Infrastructure Management', to: '/infrastructure-management' },
+    { label: 'Cloud Solutions', to: '/cloud-solutions' },
+    { label: 'Network & Security Solutions', to: '/network-security' },
+    { label: 'User Computing', to: '/user-computing' },
+    { label: 'Implementation & Migration', to: '/implementation-migration' },
+    { label: 'Consulting Services', to: '/consulting-services' }
   ];
 
   // Scroll detection
@@ -60,14 +59,14 @@ const Header = () => {
             }`}>
               Home
             </Link>
-            {/* <Link to="/about" className={`transition-colors ${
+             <Link to="/about" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               About Us
-            </Link> */}
+            </Link> 
             
             {/* Our Offering Dropdown */}
-            {/* <div 
+            <div 
               className="relative"
               onMouseEnter={() => setShowSubmenu(true)}
               onMouseLeave={() => setShowSubmenu(false)}
@@ -90,18 +89,18 @@ const Header = () => {
                     {offerings.map((item, index) => (
                       <Link
                         key={index}
-                        to="/offerings"
+                        to={item.to}
                         className="block px-4 py-2 text-sm text-gray-700 hover:bg-primary hover:text-black transition-colors"
                       >
-                        {item}
+                        {item.label}
                       </Link>
                     ))}
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div> */}
+            </div> 
 
-            {/* <Link to="/alliance" className={`transition-colors ${
+            <Link to="/alliance" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               Alliance
@@ -110,16 +109,11 @@ const Header = () => {
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               Career
-            </Link> */}
+            </Link> 
             <Link to="/contact" className={`transition-colors ${
               isScrolled ? 'text-gray-700 hover:text-primary' : 'text-black hover:text-primary'
             }`}>
               Contact Us
-            </Link>
-            
-            {/* CTA Button */}
-            <Link to="/contact" className="btn-primary">
-              Get Started
             </Link>
           </div>
 
@@ -171,13 +165,13 @@ const Header = () => {
                       {offerings.map((item, index) => (
                         <Link
                           key={index}
-                          to="/offerings"
+                          to={item.to}
                           className={`block text-sm transition-colors ${
                             isScrolled ? 'text-gray-600 hover:text-primary' : 'text-gray-200 hover:text-primary'
                           }`}
                           onClick={() => setIsOpen(false)}
                         >
-                          {item}
+                          {item.label}
                         </Link>
                       ))}
                     </div>

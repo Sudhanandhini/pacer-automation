@@ -92,7 +92,7 @@ Ulsoor, <br/>Bangalore-560 042, INDIA
                 </Link>
                 
               </div>
-{/*               
+           
               <div>
                 <Link to="/about" className="text-sm hover:text-teal-500 transition-colors">
                   About Us
@@ -117,7 +117,7 @@ Ulsoor, <br/>Bangalore-560 042, INDIA
                   Career
                 </Link>
                 
-              </div> */}
+              </div> 
               
               <div>
                 <Link to="/contact" className="text-sm hover:text-teal-500 transition-colors">
